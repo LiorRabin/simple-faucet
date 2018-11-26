@@ -16,7 +16,7 @@ contract SimpleFaucet is Ownable {
     return true;
   }
 
-  function setGiveaway(uint256 _amount) public onlyOwner returns (bool) {
+  function setDropAmount(uint256 _amount) public onlyOwner returns (bool) {
     require (_amount > 0);
     dropAmount = _amount;
     return true;
