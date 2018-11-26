@@ -1,0 +1,23 @@
+{
+  "name": "simple-faucet",
+  "version": "0.0.1",
+  "description": "A simple ERC20 faucet (with cool down)",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "deploy-dev": "truffle migrate --network development",
+    "deploy-ropsten": "truffle migrate --network ropsten",
+    "deploy-fuse": "truffle migrate --network fuse",
+    "deploy-mainnet": "truffle migrate --network mainnet"
+  },
+  "author": "LiorRabin",
+  "license": "ISC",
+  "dependencies": {
+    "openzeppelin-solidity": "^2.0.0",
+    "truffle-hdwallet-provider": "^0.0.6"
+  },
+  "devDependencies": {}
+}
